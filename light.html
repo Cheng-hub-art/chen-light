@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			div{
+				margin: 0 auto;
+				text-align: center;
+				
+			}
+			body{
+				background-color: black;
+			}
+			
+		</style>
+		<script>
+			function turnOn(){
+				document.getElementById("pic").src="img/on.png"
+			}
+			function turnOff(){
+				document.getElementById("pic").src="img/off.png"
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<img id="pic" src="img/off.png" height="400px"/>
+			<br>
+			<button onclick="turnOn()">开灯</button>
+			<button onclick="turnOff()">关灯</button>
+		</div>
+		
+	</body>
+</html>
